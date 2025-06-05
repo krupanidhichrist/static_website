@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Document Preview</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      font-family: sans-serif;
+    }
+
+    .main_image_preview {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+        width: 100vw;
+      text-align: center;
+      margin-bottom: 20px;
+    padding: 0;
+    }
+
+    header img.school-logo {
+      height: 80px;
+      margin-bottom: 10px;
+      
+    }
+
+    .logo-text h1 {
+      margin: 5px 0;
+      font-size: 24px;
+    }
+
+    .logo-text .address,
+    .logo-text .affiliation,
+    .logo-text .contact-details {
+      font-size: 14px;
+    }
+
+    .preview-img {
+      max-width: 90%;
+      max-height: 80vh;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 15px;
+      font-size: 14px;
+      text-decoration: none;
+      color: #0056b3;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="main_image_preview">
+    <header>
+          <!-- <a class="back-link" href="/index.html">← Back</a> -->
+
+      <img src="https://i.ibb.co/r21sMZRn/download-vscode.jpg" alt="School Logo" class="school-logo" />
+      <div class="logo-text">
+        <h1>KRUPANIDHI CHRIST CONVENT & HIGH SCHOOL</h1>
+        <div class="address">#173, JIGANI, ANEKAL TALUK, BANGALORE-560106</div>
+        <div class="affiliation">Affiliated to C.B.S.E, New Delhi (Affiliation no. - 831112)</div>
+        <div class="contact-details">
+          Contact: 8867325104 | School No: 4715 | Email: krupanidhichrist@gmail.com
+        </div>
+      </div>
+    </header>
+
+    <!-- Image Preview will be injected here -->
+    <div id="preview-container"></div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const imgURL = params.get('img');
+    const pdfURL = params.get('pdf');
+
+    if (imgURL && pdfURL) {
+      const img = document.createElement('img');
+      img.src = imgURL;
+      img.alt = "Document Preview";
+      img.className = "preview-img";
+      img.title = "Click to open full PDF";
+
+      img.onclick = () => {
+        window.open(pdfURL, '_blank');
+      };
+
+      document.getElementById('preview-container').appendChild(img);
+    } else {
+      document.getElementById('preview-container').innerHTML = '<p style="color:red;">Missing image or PDF link.</p>';
+    }
+  </script>
+</body>
+</html>
