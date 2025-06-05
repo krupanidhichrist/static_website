@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+    <title>KRUPANIDHI CHRIST CONVENT & HIGH SCHOOL</title>
+<style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    h2, h3 {
+      color: #2c3e50;
+    }
+
+    .address, .affiliation, .contact-details {
+    color: #fff !important;
+}
+.logo-text h1{
+      color: #fff !important;
+
+}
+    .mandatory_school_information,
+    .mandatory_document_information,
+    .result_and_academics,
+    .staff,
+    .infrastructure {
+      padding: 40px 60px;
+      background-color: #fff;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th,
+    td {
+      border: 1px solid #e0e0e0;
+      padding: 12px 16px;
+      text-align: left;
+      font-size: 15px;
+    }
+
+    th {
+      background-color: #f1f1f1;
+      font-weight: 600;
+      color: #34495e;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-size: 14px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 5% auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 800px;
+      max-height: 90%;
+      box-sizing: border-box;
+      overflow-y: auto;
+      text-align: center;
+    }
+
+    .modal-content img {
+      max-width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .close {
+      color: #333;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .mandatory_school_information,
+      .mandatory_document_information,
+      .result_and_academics,
+      .staff,
+      .infrastructure {
+        padding: 20px;
+      }
+
+      th, td {
+        font-size: 13px;
+        padding: 10px;
+      }
+
+      .modal-content {
+        width: 95%;
+        height: 90%;
+      }
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background-color: #f0f0f0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .school-logo {
+      max-height: 80px;
+      margin-right: 20px;
+    }
+
+    .header-content {
+      flex: 1;
+    }
+
+    .logo-text h1 {
+      margin: 0 0 5px 0;
+      font-size: 24px;
+      color: #2c3e50;
+    }
+
+    .address,
+    .affiliation,
+    .contact-details {
+      font-size: 14px;
+      color: #666;
+      margin: 2px 0;
+    }
+
+    .table_note {
+      background-color: #f9f9f9;
+      padding: 10px 15px;
+      border-left: 4px solid #007bff;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img
+      src="https://i.ibb.co/r21sMZRn/download-vscode.jpg"
+      alt="School Logo"
+      class="school-logo"
+    />
+    <div class="header-content">
+      <div class="logo-text">
+        <h1>KRUPANIDHI CHRIST CONVENT & HIGH SCHOOL</h1>
+        <div class="address">
+          #173, JIGANI, ANEKAL TALUK, BANGALORE-560106
+        </div>
+        <div class="affiliation">
+          Affiliated to C.B.S.E, New Delhi (Affiliation no. - 831112)
+        </div>
+        <div class="contact-details">
+          Contact: 8867325104 | School No: 4715 | Email:
+          krupanidhichrist@gmail.com
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <h2>Mandatory Public Disclosure</h2>
+
+    <!-- School Info Table -->
+    <div class="mandatory_school_information">
+      <h3>A:	GENERAL INFORMATION:</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>SR. NO.</th>
+            <th>INFORMATION</th>
+            <th>DETAILS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>NAME OF THE SCHOOL</td>
+            <td>KRUPANIDHI CHRIST CONVENT AND HIGH SCHOOL</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>AFFILIATION NO</td>
+            <td>831112</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>SCHOOL CODE</td>
+            <td>46745</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>COMPLETE ADDRESS</td>
+            <td>
+              #173,Behind Jigani Police Station, Jigani, Anekal Taluk,
+              Bangalore-560105
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>PRINCIPAL NAME & QUALIFICATION</td>
+            <td>Mrs. Nethra E<br />MSc, B.Ed</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>SCHOOL EMAIL ID</td>
+            <td>krupanidhichrist@gmail.com</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>CONTACT DETAILS</td>
+            <td>+91 9731297612, +91 9886223751, +91 9741545449</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Document Info Table -->
+    <div class="mandatory_document_information">
+      <h3>B: DOCUMENTS AND INFORMATION</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>SL NO.</th>
+            <th>DOCUMENTS/INFORMATION</th>
+            <th>UPLOAD DOCUMENTS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+              COPIES OF AFFILIATION/UPGRADATION LETTER AND RECENT EXTENSION OF
+              AFFILIATION, IF ANY
+            </td>
+            <td>
+              <button onclick="openModal('documents/Affiliation_Letter.pdf')">
+                View
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              COPIES OF SOCIETIES/TRUST/COMPANY REGISTRATION/RENEWAL CERTIFICATE,
+              AS APPLICABLE
+            </td>
+            <td>
+              <button
+                onclick="openModal('documents/Copy of Socities_Trust_Company Registration_Renewal Certificate.pdf')"
+              >
+                View
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+              COPY OF NO OBJECTION CERTIFICATE (NOC) ISSUED, IF APPLICABLE, BY
+              THE STATE GOVT./UT
+            </td>
+            <td>
+              <button
+                onclick="openModal('documents/Copy of No Objection Certificate (NOC) Issued.pdf')"
+              >
+                View
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+              COPIES OF RECOGNITION CERTIFICATE UNDER RTE ACT, 2009, AND IT’S
+              RENEWAL IF APPLICABLE
+            </td>
+            <td>
+              <button
+                onclick="openModal('documents/Copies of Reconition Certificate.pdf')"
+              >
+                View
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>
+              COPY OF VALID LAND CERTIFICATE ISSUED BY DM/ ADM/ SDM/
+              TEHSILDAR/ NAIB TEHSILDAR/ REGISTRAR/ SUB- REGISTRAR/ EQUIVALENT
+              LAND AUTHORITY
+            </td>
+            <td>
+              <button onclick="openModal('documents/Land Certificate .pdf')">
+                View
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>COPY OF VALID BUILDING SAFETY CERTIFICATE AS PER THE NATIONAL BUILDING CODE</td>
+            <td>
+              <button onclick="openModal('documents/Building Safety Certificate.pdf')">View</button>
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>COPY OF VALID FIRE SAFETY CERTIFICATE ISSUED BY THE COMPETENT AUTHORITY</td>
+            <td>
+              <button onclick="openModal('documents/Valid Fire Safety Certificate.pdf')">View</button>
+            </td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>
+              COPY OF THE DEO CERTIFICATE SUBMITTED BY THE SCHOOL FOR
+              AFFILIATION/UPGRADATION/EXTENSION OF AFFILIATION OR SELF
+              CERTIFICATION BY SCHOOL
+            </td>
+            <td>
+              <button onclick="openModal('documents/DEO Certificate.pdf')">View</button>
+            </td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>COPIES OF SAFE DRINKING WATER AND SANITARY CONDITION CERTIFICATE</td>
+            <td>
+              <button
+                onclick="openModal('documents/Copy of Valid Water, Health and Sanitation Certificates .pdf')"
+              >
+                View
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="table_note">
+         <h6><b>NOTE:</b> THE SCHOOLS NEEDS TO UPLOAD THE SELF ATTESTED COPIES OF ABOVE LISTED DOCUMETNS BY CHAIRMAN/MANAGER/SECRETARY AND PRINCIPAL. IN CASE, IT IS NOTICED AT LATER STAGE THAT UPLOADED DOCUMENTS ARE NOT GENUINE THEN SCHOOL SHALL BE LIABLE FOR ACTION AS PER NORMS.</h6>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for Image View -->
+  <div id="imageModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeImageModal()">&times;</span>
+      <div id="imageContainer"></div>
+    </div>
+  </div>
+
+<!-- result and academics -->
+
+<section class="result_and_academics">
+  <h3>C: RESULT AND ACADEMICS:</h3>
+<table class="result_and_academics_table">
+  <thead>
+    <tr>
+      <th>S.NO.</th>
+      <th>DOCUMENTS/INFORMATION</th>
+      <th>UPLOAD DOCUMENTS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>FEE STRUCTURE OF THE SCHOOL</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>ANNUAL ACADEMIC CALENDAR</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>LIST OF SCHOOL MANAGEMENT COMMITTEE (SMC)</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>LIST OF PARENTS TEACHERS ASSOCIATION (PTA) MEMBERS</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>LAST THREE-YEAR RESULT OF THE BOARD EXAMINATION AS PER APPLICABILITY</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+  <h3>RESULT CLASS: X (State Board):</h3>
+<table>
+  <thead>
+
+    <tr>
+      <th>S.NO.</th>
+      <th>YEAR</th>
+      <th>NO. OF REGISTERED STUDENTS</th>
+      <th>NO. OF STUDENTS PASSED</th>
+      <th>PASS PERCENTAGE</th>
+      <th>REMARKS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>01</td>
+      <td>2022-23</td>
+      <td>32</td>
+      <td>31</td>
+      <td>96.8%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>02</td>
+      <td>2023-24</td>
+      <td>36</td>
+      <td>36</td>
+      <td>100%</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</section>
+
+<section class="staff">
+  <h3>D: STAFF (TEACHING)</h3>
+  <table>
+  <thead>
+    <tr>
+      <th>S.NO.</th>
+      <th>INFORMATION</th>
+      <th>DETAILS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>PRINCIPAL</td>
+      <td>01</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>TOTAL NO. OF TEACHERS</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;o PGT</td>
+      <td>04</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;o TGT</td>
+      <td>05</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;o PRT (NTT)</td>
+      <td>04</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>TEACHERS SECTION RATIO</td>
+      <td>30:1</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>DETAILS OF SPECIAL EDUCATOR</td>
+      <td>01</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>DETAILS OF COUNSELLOR AND WELLNESS TEACHER</td>
+      <td>01</td>
+    </tr>
+  </tbody>
+</table>
+
+</section>
+
+
+<section class="infrastructure">
+<h3>	SCHOOL INFRASTRUCTURE:</h3>
+<table>
+  <thead>
+    <tr>
+      <th>S.NO.</th>
+      <th>INFORMATION</th>
+      <th>DETAILS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>TOTAL CAMPUS AREA OF THE SCHOOL (IN SQUARE MTR)</td>
+      <td>2024</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>NO. AND SIZE OF THE CLASS ROOMS (IN SQ FTMTR)</td>
+      <td>19 No’s (37.16) each</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>NO. AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (IN SQ MTR)</td>
+      <td>04 No’s (148.64) each</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>INTERNET FACILITY (Y/N)</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>NO. OF GIRLS TOILETS</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>NO. OF BOYS TOILETS</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+</section>
+
+  <script>
+    // Map document keys to image arrays
+    const documentImages = {
+      "documents/Affiliation_Letter.pdf": [
+        "documents/images/Affiliation_letter/Affiliation Letter_page-0001.jpg",
+        "documents/images/Affiliation_letter/Affiliation Letter_page-0002.jpg",
+"documents/images/Affiliation_letter/Affiliation Letter_page-0003.jpg",
+"documents/images/Affiliation_letter/Affiliation Letter_page-0004.jpg",
+"documents/images/Affiliation_letter/Affiliation Letter_page-0005.jpg",
+"documents/images/Affiliation_letter/Affiliation Letter_page-0006.jpg",
+      ],
+      "documents/Copy of Socities_Trust_Company Registration_Renewal Certificate.pdf": [
+        "documents/images/socities_trust/Copies of Societies_Trust_page-0001.jpg",
+"documents/images/socities_trust/Copies of Societies_Trust_page-0002.jpg",
+"documents/images/socities_trust/Copies of Societies_Trust_page-0003.jpg",
+"documents/images/socities_trust/Copies of Societies_Trust_page-0004.jpg",
+"documents/images/socities_trust/Copies of Societies_Trust_page-0005.jpg",
+"documents/images/socities_trust/Copies of Societies_Trust_page-0006.jpg",
+"documents/images/socities_trust/Copies of Societies_Trust_page-0007.jpg",
+"documents/images/socities_trust/Copies of Societies_Trust_page-0008.jpg",
+"documents/images/socities_trust/Copies of Societies_Trust_page-0009.jpg",
+"documents/images/socities_trust/Copies of Societies_Trust_page-0010.jpg",
+"documents/images/socities_trust/Copies of Societies_Trust_page-0011.jpg",
+"documents/images/socities_trust/Copies of Societies_Trust_page-0012.jpg",
+"documents/images/socities_trust/Copies of Societies_Trust_page-0013.jpg",
+"documents/images/socities_trust/Copies of Societies_Trust_page-0014.jpg",
+"documents/images/socities_trust/Copies of Societies_Trust_page-0015.jpg",
+'documents/images/socities_trust/Copies of Societies_Trust_page-0016.jpg',
+"documents/images/socities_trust/Copies of Societies_Trust_page-0017.jpg"
+
+      ],
+      "documents/Copy of No Objection Certificate (NOC) Issued.pdf": [
+        "documents/images/NOC/Copy of No Objection Certificate (NOC) Issued_page-0001.jpg",
+        "documents/images/NOC/Copy of No Objection Certificate (NOC) Issued_page-0002.jpg",
+        "documents/images/NOC/Copy of No Objection Certificate (NOC) Issued_page-0003.jpg",
+      ],
+      "documents/Copies of Reconition Certificate.pdf": [
+        "documents/images/Reconition_Certificate/Copies of Reconition Certificate_page-0001.jpg",
+        "documents/images/Reconition_Certificate/Copies of Reconition Certificate_page-0002.jpg",
+        "documents/images/Reconition_Certificate/Copies of Reconition Certificate_page-0003.jpg",
+        "documents/images/Reconition_Certificate/Copies of Reconition Certificate_page-0004.jpg",
+        "documents/images/Reconition_Certificate/Copies of Reconition Certificate_page-0005.jpg",
+        "documents/images/Reconition_Certificate/Copies of Reconition Certificate_page-0006.jpg",
+        "documents/images/Reconition_Certificate/Copies of Reconition Certificate_page-0007.jpg",
+        "documents/images/Reconition_Certificate/Copies of Reconition Certificate_page-0008.jpg",
+        "documents/images/Reconition_Certificate/Copies of Reconition Certificate_page-0009.jpg",
+        "documents/images/Reconition_Certificate/Copies of Reconition Certificate_page-0010.jpg",
+      ],
+      "documents/Land Certificate .pdf": ["documents/images/land_certificate/Land Certificate _page-0001.jpg"],
+      "documents/Building Safety Certificate.pdf": [
+        "documents/images/building_safety/Building Safety Certificate_page-0001.jpg",
+      ],
+      "documents/Valid Fire Safety Certificate.pdf": [
+        "documents/images/fire_safety/Copy of Valid Fire Safety Certificate_page-0001.jpg",
+        "documents/images/fire_safety/Copy of Valid Fire Safety Certificate_page-0002.jpg"
+      ],
+      "documents/DEO Certificate.pdf": ["documents/images/Deo_certificate/DEO Certificate _page-0001.jpg",
+      "documents/images/Deo_certificate/DEO Certificate _page-0002.jpg",],
+      "documents/Copy of Valid Water, Health and Sanitation Certificates .pdf": [
+        "documents/images/Water_Sanitation/Copy of Valid Water, Health and Sanitation Certificates_page-0001.jpg",
+      ],
+    };
+
+    function openModal(docKey) {
+      const container = document.getElementById("imageContainer");
+      container.innerHTML = ""; // Clear previous images
+
+      const images = documentImages[docKey];
+      if (!images) {
+        container.innerHTML = "<p>Images not found for this document.</p>";
+      } else {
+        images.forEach((src) => {
+          const img = document.createElement("img");
+          img.src = src;
+          img.alt = "Document Image";
+          container.appendChild(img);
+        });
+      }
+
+      document.getElementById("imageModal").style.display = "block";
+    }
+
+    function closeImageModal() {
+      document.getElementById("imageModal").style.display = "none";
+      document.getElementById("imageContainer").innerHTML = "";
+    }
+
+    // Close modal on clicking outside content
+    window.onclick = function (event) {
+      const modal = document.getElementById("imageModal");
+      if (event.target === modal) {
+        closeImageModal();
+      }
+    };
+  </script>
+</body>
+</html>
